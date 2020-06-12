@@ -10,15 +10,15 @@
 
 (customEventHooks.registerHandler
  "OnServerPostInit"
- (fn []
+ (λ []
    (info "Here's an encore!")))
 
 (customEventHooks.registerHandler
  "OnServerInit"
- (fn []
+ (λ []
    (info "What's this?!")))
 
 (customEventHooks.registerHandler
  "OnServerExit"
- (fn []
+ (λ []
    (info "Peace out!")))

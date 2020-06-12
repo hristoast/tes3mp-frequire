@@ -12,3 +12,13 @@
  "OnServerPostInit"
  (fn []
    (info "Here's an encore!")))
+
+(customEventHooks.registerHandler
+ "OnServerInit"
+ (fn []
+   (info "What's this?!")))
+
+(customEventHooks.registerHandler
+ "OnServerExit"
+ (fn []
+   (info "Peace out!")))

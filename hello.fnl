@@ -3,4 +3,7 @@
 (fn info [msg]
   (tes3mp.LogMessage enumerations.log.INFO (.. "[ FENNEL DEMO ]: " msg)))
 
-(info "Hello, world -- from fennel!")
+(fn say-hi [event-status]
+  (info "Hello, world -- from fennel!"))
+
+(customEventHooks.registerHandler "OnServerPostInit" say-hi)

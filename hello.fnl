@@ -7,3 +7,8 @@
   (info "Hello, world -- from fennel!"))
 
 (customEventHooks.registerHandler "OnServerPostInit" say-hi)
+
+(customEventHooks.registerHandler
+ "OnServerPostInit"
+ (fn []
+   (info "Here's an encore!")))
